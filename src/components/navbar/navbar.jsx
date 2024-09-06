@@ -7,12 +7,13 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-logo">
         <img src="/uofm.jpg" alt="Univerity of Minnesota" className="logo" />
+        <p>Tyler Yantes - Bachelor of Science in Computer Engineering</p>
       </div>
       <div className='linksContainer'>
-        <p><Link to="/" className='navLinks'>About Me</Link></p>
-        <p><Link to="/about" className='navLinks'>Skills</Link></p>
-        <p><Link to="/services" className='navLinks'>Projects</Link></p>
-        <p><Link to="/contact" className='navLinks'>Connect</Link></p>
+        <p><a href="/#aboutme" className='navLinks'>About Me</a></p>
+        <p><a href="/#skills" className='navLinks'>Skills</a></p>
+        <p><a href="/#projects" className='navLinks'>Projects</a></p>
+        <p><a href="/#connect" className='navLinks'>Connect</a></p>
       </div>
     </nav>
   );

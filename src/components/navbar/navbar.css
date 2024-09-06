@@ -1,13 +1,16 @@
 .navbar {
+    position: fixed;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     flex-basis: 100%;
     background-color: #CD93D8;
     top: 0;
     margin-bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
 }
 
 
@@ -16,7 +19,14 @@
     height: 50px;
     border-radius: 50%;
     margin-left: 10px;
-    margin-right: 5px;
+    margin-right: 15px;
+}
+
+.navbar-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
 }
 
 .navLinks {
@@ -44,6 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 70px;
 }
 
 .headshotContainer{
@@ -56,6 +67,7 @@
     border-radius: 50%;
     width: 40%;
     margin-right: 30%;
+    box-shadow: 0 2px 8px rgba(0.6, 0.6, 0.6, 0.6); /* Shadow effect */
 }
 
 .aboutmeContainer{
@@ -69,6 +81,7 @@
 
 .aboutmeTitle{
     font-size: 38px;
+    margin-bottom: 5px;
 }
 
 .skillsContainer{
@@ -77,11 +90,19 @@
     grid-template-rows: repeat(7, 1fr);
     background-color: #CD93D8;
     width: 80%;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 10vh;
     border-radius: 20px 40px 20px 40px;
     padding-bottom: 2%;
+    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.3, 0.3); /* Shadow effect */
+}
+
+.skillTitle{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 2px;
 }
 
 ul {
@@ -90,17 +111,25 @@ ul {
     padding: 0;
 }
 
-li {
+/* li {
     margin: 0;
     padding: 0;
-}
+} */
 
 .skillsTitle{
-    grid-column: 3 / 4;
+    grid-column: 2 / 4;
     grid-row: 1;
+    /* margin-right: 60%; */
+    font-size: 32px;
+    font-weight: 500;
     display: flex;
-    justify-content: right; /* Center content horizontally */
+    justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
+    margin-bottom: 1px;
+}
+
+.skillsList li{
+    font-size: 20px;
 }
 
 .frontEnd{
@@ -133,7 +162,7 @@ li {
 
 .carouselContainer{
     grid-column: 1;
-    grid-row: 5;
+    grid-row: 7;
     margin: 0;
     padding: 0;
 }
@@ -155,6 +184,18 @@ li {
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+    font-size: 18px;
+}
+
+.projectHeader{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+b{
+    font-weight: 500;
+    font-size: 17px;
 }
 
 .project{
@@ -166,14 +207,24 @@ li {
     margin-right: auto;
     margin-bottom: 20px;
     grid-template-columns: 65% 35%;
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     border-radius: 20px;
+    box-shadow: 0 4px 4px rgba(0.4, 0.4, 0.4, 0.4); /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: scale(1.02); /* Slightly enlarge the element */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4); /* Optional: Increase shadow on hover */
 }
 
 .pTitle{
     grid-row: 1;
     grid-column: 1;
     padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
 }
 
 .pDescription{
@@ -198,8 +249,20 @@ li {
 }
 
 .pPicture{
-    grid-row: 1;
+    grid-row: 1 / 5;
     grid-column: 2;
+    width: 90%; /* Ensure the image takes the full width of the grid item */
+    height: 90%; /* Ensure the image takes the full height of the grid item */
+    object-fit: contain; /* Cover the entire grid slot while maintaining aspect ratio */
+    border-radius: inherit; /* Optional: match the border-radius of the grid item */
+    margin: auto auto auto auto;
+    image-rendering: auto; /* Default value */
+    image-rendering: crisp-edges; /* For pixel art or images that need to maintain crisp edges */
+    
+}
+
+.pPicture img{
+    border-radius: 80px;
 }
 
 .connectContainer{
@@ -230,4 +293,13 @@ li {
 
 .cRight{
     margin-left: auto;
+    
+}
+
+.resume{
+    color: black;
+}
+
+a{
+    text-decoration: none;
 }
