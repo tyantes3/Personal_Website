@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import './cssFiles/top.css'
+import './cssFiles/skills.css'
+import './cssFiles/projects.css'
+import './cssFiles/connect.css'
+
 import Navbar from './components/navbar/navbar';
 import Carousel from './components/carousel/carousel';
 
@@ -90,7 +95,6 @@ function App() {
             <p className='pDescription'><b>Description</b> - Gopher Burrows is a website that was made to help University of Minnesota students find clubs and activites to participate in around campus. This project was completed with a group of 4 other students as the first project of my grad level web-development class. This website was made using Flask along AWS S3 Buckets for picture storage and Weavy as a chat feature. My main job on this project was to develop the club pages including the in club chat which was built from scratch. Overall this project helped me to learn more about developing websites on Flask, along with hosting websites on Render.com.</p>
             <p className='pTech'><b>Technologies Used</b> - Flask, AWS S3 Buckets, Pug HTML Templates, hosted on Render.com</p>
             <p className='pLink'><b>Link</b> - The link is currently broken so working on getting it rehosted!</p>
-            <p className='pPicture'>Picture</p>
           </div>
         </div>
 

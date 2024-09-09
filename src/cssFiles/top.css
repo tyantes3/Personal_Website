@@ -1,0 +1,33 @@
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+}
+
+.headshotContainer{
+    border-radius: 10px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.headshot{
+    border-radius: 50%;
+    width: 40%;
+    margin-right: 30%;
+    box-shadow: 0 2px 8px rgba(0.6, 0.6, 0.6, 0.6); /* Shadow effect */
+}
+
+.aboutmeContainer{
+    flex-basis: 60%;
+}
+.aboutMe{
+    color: #FFFFFF;
+    margin-right: 25%;
+    
+}
+
+.aboutmeTitle{
+    font-size: 38px;
+    margin-bottom: 5px;
+}

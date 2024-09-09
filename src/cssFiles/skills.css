@@ -1,0 +1,89 @@
+.skillsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    background-color: #CD93D8;
+    width: 80%;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    border-radius: 20px 40px 20px 40px;
+    padding-bottom: 2%;
+    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.3, 0.3); /* Shadow effect */
+}
+
+.skillTitle{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* li {
+    margin: 0;
+    padding: 0;
+} */
+
+.skillsTitle{
+    grid-column: 2 / 4;
+    grid-row: 1;
+    /* margin-right: 60%; */
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    margin-bottom: 1px;
+}
+
+.skillsList li{
+    font-size: 20px;
+}
+
+.frontEnd{
+    grid-column: 1;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    justify-self: center;
+}
+
+.backEnd{
+    grid-column: 2;
+    grid-row-start: 3;
+    grid-row-end: 7;
+    justify-self: center;
+}
+
+.tools{
+    grid-column: 3;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    justify-self: center;
+}
+
+.softSkills{
+    grid-column: 4;
+    grid-row-start: 5;
+    grid-row-end: 9;
+    justify-self: center;
+}
+
+.carouselContainer{
+    grid-column: 1;
+    grid-row: 7;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}

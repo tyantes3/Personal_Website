@@ -1,305 +1,61 @@
-.navbar {
-    position: fixed;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    flex-basis: 100%;
-    background-color: #CD93D8;
-    top: 0;
-    margin-bottom: 0;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
-}
-
-
-.logo{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-left: 10px;
-    margin-right: 15px;
-}
-
-.navbar-logo{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 24px;
-}
-
-.navLinks {
-    text-decoration: none;
-    color: #263238;
-}
-
-.navLinks:hover {
-    background-color: #A76CBF; /* Change background color on hover */
-    border-radius: 4px;        /* Round the corners of the background */
-    padding: 7.5px;
-}
-
-.linksContainer {
-    display: flex;          /* Use flexbox to align children horizontally */
-    justify-content: center; /* Center the links horizontally within the container */
-    align-items: center;    /* Center the links vertically within the container (if necessary) */
-}
-
-.linksContainer p{
-    margin: 0 15px;
-}
-
-.topContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 70px;
-}
-
-.headshotContainer{
-    border-radius: 10px;
-    width: 100%;
-    padding-top: 50px;
-}
-
-.headshot{
-    border-radius: 50%;
-    width: 40%;
-    margin-right: 30%;
-    box-shadow: 0 2px 8px rgba(0.6, 0.6, 0.6, 0.6); /* Shadow effect */
-}
-
-.aboutmeContainer{
-    flex-basis: 60%;
-}
-.aboutMe{
-    color: #FFFFFF;
-    margin-right: 25%;
-    
-}
-
-.aboutmeTitle{
-    font-size: 38px;
-    margin-bottom: 5px;
-}
-
-.skillsContainer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    background-color: #CD93D8;
-    width: 80%;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
-    border-radius: 20px 40px 20px 40px;
-    padding-bottom: 2%;
-    box-shadow: 0 2px 4px rgba(0.3, 0.3, 0.3, 0.3); /* Shadow effect */
-}
-
-.skillTitle{
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 2px;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* li {
-    margin: 0;
-    padding: 0;
-} */
-
-.skillsTitle{
-    grid-column: 2 / 4;
-    grid-row: 1;
-    /* margin-right: 60%; */
-    font-size: 32px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    margin-bottom: 1px;
-}
-
-.skillsList li{
-    font-size: 20px;
-}
-
-.frontEnd{
-    grid-column: 1;
-    grid-row-start: 2;
-    grid-row-end: 6;
-    justify-self: center;
-}
-
-.backEnd{
-    grid-column: 2;
-    grid-row-start: 3;
-    grid-row-end: 7;
-    justify-self: center;
-}
-
-.tools{
-    grid-column: 3;
-    grid-row-start: 4;
-    grid-row-end: 8;
-    justify-self: center;
-}
-
-.softSkills{
-    grid-column: 4;
-    grid-row-start: 5;
-    grid-row-end: 9;
-    justify-self: center;
-}
-
-.carouselContainer{
-    grid-column: 1;
-    grid-row: 7;
-    margin: 0;
-    padding: 0;
-}
-
-.carousel{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+@media (max-width: 1040px) {
+    .navbar-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 20px;
+    }
 
 }
 
-.projectContainer{
-    color: white;
-    text-align: left;
-}
+    .navbar {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        flex-basis: 100%;
+        background-color: #CD93D8;
+        top: 0;
+        margin-bottom: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    }
 
-.projectTitle{
-    width: 80%;
-    margin-top: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 18px;
-}
 
-.projectHeader{
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 2px;
-}
+    .logo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-right: 15px;
+    }
 
-b{
-    font-weight: 500;
-    font-size: 17px;
-}
+    .navbar-logo{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 24px;
+    }
 
-.project{
-    display: grid;
-    background-color: white;
-    color: black;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-    grid-template-columns: 65% 35%;
-    grid-template-rows: 1fr 3fr 1fr 1fr;
-    border-radius: 20px;
-    box-shadow: 0 4px 4px rgba(0.4, 0.4, 0.4, 0.4); /* Shadow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .navLinks {
+        text-decoration: none;
+        color: #263238;
+    }
 
-.project:hover {
-    transform: scale(1.02); /* Slightly enlarge the element */
-    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4); /* Optional: Increase shadow on hover */
-}
+    .navLinks:hover {
+        background-color: #A76CBF; /* Change background color on hover */
+        border-radius: 4px;        /* Round the corners of the background */
+        padding: 7.5px;
+    }
 
-.pTitle{
-    grid-row: 1;
-    grid-column: 1;
-    padding-left: 10px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 0;
-}
+    .linksContainer {
+        display: flex;          /* Use flexbox to align children horizontally */
+        justify-content: center; /* Center the links horizontally within the container */
+        align-items: center;    /* Center the links vertically within the container (if necessary) */
+    }
 
-.pDescription{
-    grid-row: 2;
-    grid-column: 1;
-    padding-left: 10px;
-
-}
-
-.pTech{
-    grid-row: 3;
-    grid-column: 1;
-    padding-left: 10px;
-
-}
-
-.pLink{
-    grid-row: 4;
-    grid-column: 1;
-    padding-left: 10px;
-
-}
-
-.pPicture{
-    grid-row: 1 / 5;
-    grid-column: 2;
-    width: 90%; /* Ensure the image takes the full width of the grid item */
-    height: 90%; /* Ensure the image takes the full height of the grid item */
-    object-fit: contain; /* Cover the entire grid slot while maintaining aspect ratio */
-    border-radius: inherit; /* Optional: match the border-radius of the grid item */
-    margin: auto auto auto auto;
-    image-rendering: auto; /* Default value */
-    image-rendering: crisp-edges; /* For pixel art or images that need to maintain crisp edges */
-    
-}
-
-.pPicture img{
-    border-radius: 80px;
-}
-
-.connectContainer{
-    display: flex;
-    /* text-align: left; */
-    width: 100%;
-    background-color: #CD93D8;
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    margin-top: 60px;
-}
-
-.connectContainer p{
-    margin: 0;
-    padding: 7px;
-}
-
-.linkedin{
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.cRight{
-    margin-left: auto;
-    
-}
-
-.resume{
-    color: black;
-}
-
-a{
-    text-decoration: none;
-}
+    .linksContainer p{
+        margin: 0 15px;
+    }

@@ -1,0 +1,37 @@
+.connectContainer{
+    display: flex;
+    /* text-align: left; */
+    width: 100%;
+    background-color: #CD93D8;
+    font-size: 28px;
+    margin: 0;
+    padding: 0;
+    margin-top: 60px;
+    align-items: center;
+}
+
+.connectContainer p{
+    margin: 0;
+    padding: 12px;
+}
+
+.linkedin{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cRight{
+    margin-left: auto;
+    
+}
+
+.resume{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
