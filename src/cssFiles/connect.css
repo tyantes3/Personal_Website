@@ -1,26 +1,97 @@
-.connectContainer{
-    display: flex;
-    /* text-align: left; */
-    width: 100%;
-    background-color: #CD93D8;
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-    margin-top: 60px;
-    align-items: center;
+@media (max-width: 414px){
+    .connectContainer{
+        display: flex;
+        /* text-align: left; */
+        width: 100%;
+        background-color: #CD93D8;
+        font-size: 12px;
+        margin: 0;
+        padding: 5px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 60px;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .linkedin{
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 536px){
+    .connectContainer{
+        display: flex;
+        /* text-align: left; */
+        width: 100%;
+        background-color: #CD93D8;
+        font-size: 12px;
+        margin: 0;
+        padding: 5px;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .linkedin{
+        width: 30px;
+        height: 30px;
+        border-radius: 10px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 720px){
+    .connectContainer{
+        display: flex;
+        /* text-align: left; */
+        width: 100%;
+        background-color: #CD93D8;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .linkedin{
+        width: 35px;
+        height: 35px;
+        border-radius: 10px;
+        margin-left: 2px;
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 720px) {
+    .connectContainer{
+        display: flex;
+        /* text-align: left; */
+        width: 100%;
+        background-color: #CD93D8;
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+        margin-top: 60px;
+        align-items: center;
+    }
+
+    .linkedin{
+        width: 45px;
+        height: 45px;
+        border-radius: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 .connectContainer p{
     margin: 0;
     padding: 12px;
-}
-
-.linkedin{
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-    margin-left: 5px;
-    margin-right: 5px;
 }
 
 .cRight{
